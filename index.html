@@ -135,7 +135,9 @@
             <div class="flex-1 overflow-x-auto no-scrollbar ml-4 md:ml-8">
                 <div class="flex items-center space-x-1 md:space-x-6 whitespace-nowrap pr-4">
                     <a href="#home" class="px-3 py-2 text-sm font-bold text-slate-600 hover:text-red-600 hover:bg-slate-50 rounded-lg transition-colors">홈</a>
+                    <a href="#video" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-red-600 hover:bg-slate-50 rounded-lg transition-colors">영상보기</a>
                     <a href="#departure" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-red-600 hover:bg-slate-50 rounded-lg transition-colors">미팅/항공</a>
+                    <a href="#vjw" class="px-3 py-2 text-sm font-bold text-indigo-600 hover:text-indigo-800 hover:bg-indigo-50 rounded-lg transition-colors"><i class="fa-solid fa-qrcode mr-1"></i>입국준비</a>
                     <a href="#baggage" class="px-3 py-2 text-sm font-bold text-red-600 hover:text-red-800 hover:bg-red-50 rounded-lg transition-colors"><i class="fa-solid fa-suitcase-rolling mr-1"></i>수하물</a>
                     <a href="#economy" class="px-3 py-2 text-sm font-bold text-blue-600 hover:text-blue-800 hover:bg-blue-50 rounded-lg transition-colors"><i class="fa-solid fa-yen-sign mr-1"></i>물가/환율</a>
                     <a href="#map-section" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-red-600 hover:bg-slate-50 rounded-lg transition-colors">일정/동선</a>
@@ -185,6 +187,27 @@
             </div>
         </section>
 
+        <!-- 🎬 Video Section (Restored & Enhanced) -->
+        <section id="video" class="py-12 bg-slate-900 text-white relative z-10 print-hide border-b border-slate-800">
+            <div class="container mx-auto px-4 max-w-5xl">
+                <div class="text-center mb-8">
+                    <span class="inline-block bg-slate-800 text-slate-300 border border-slate-700 text-xs px-4 py-1.5 rounded-full font-bold shadow-sm mb-3">랜선 여행</span>
+                    <h2 class="text-2xl md:text-3xl font-bold">오사카 힐링투어 미리보기 🎬</h2>
+                    <p class="text-slate-400 mt-2 text-sm font-medium">출발 전, 우리가 방문할 간사이 지역의 아름다운 풍경을 영상으로 만나보세요.</p>
+                </div>
+                <!-- 16:9 Aspect Ratio Container for YouTube -->
+                <div class="relative w-full max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl border-4 border-slate-800 bg-black" style="padding-top: 56.25%;">
+                    <iframe class="absolute top-0 left-0 w-full h-full" 
+                            src="https://www.youtube.com/embed/aPFCcvNwauE?rel=0" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
         <!-- Departure & Guide Info -->
         <section id="departure" class="py-12 bg-slate-50 border-y border-slate-200 relative z-10 print-hide">
             <div class="container mx-auto px-4">
@@ -201,6 +224,7 @@
                             <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 space-y-3 text-sm text-slate-700">
                                 <p class="flex items-center gap-3"><i class="fa-regular fa-clock text-blue-500 w-4"></i> <strong>출발 시간:</strong> 02:30 (새벽)</p>
                                 <p class="flex items-center gap-3"><i class="fa-solid fa-map-pin text-blue-500 w-4"></i> <strong>집결 장소:</strong> 태백시청 앞 광장</p>
+                                <p class="flex items-start gap-3"><i class="fa-solid fa-phone text-blue-500 w-4 mt-0.5"></i> <span><strong>공항수송 차량:</strong> 김원준 승무원님<br><a href="tel:010-2740-8785" class="text-[12px] text-blue-600 font-bold mt-0.5 inline-block hover:underline">010-2740-8785</a></span></p>
                             </div>
                         </div>
                     </div>
@@ -287,6 +311,45 @@
                         </div>
                         <div class="mt-4 text-center">
                             <span class="text-xs font-bold text-red-600 bg-white border border-red-200 px-3 py-1 rounded shadow-sm inline-block"><i class="fa-solid fa-circle-exclamation mr-1"></i> 도착이 김포공항입니다.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visit Japan Web Section (Restored & Updated with Paper Form Logic) -->
+        <section id="vjw" class="py-12 bg-indigo-50 border-b border-indigo-100 print-hide">
+            <div class="container mx-auto px-4 max-w-5xl">
+                <div class="bg-white rounded-3xl p-6 md:p-10 shadow-lg border border-indigo-100 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-indigo-600 text-white text-xs px-4 py-2 rounded-bl-xl font-bold">입국 필수 준비</div>
+                    <div class="flex flex-col md:flex-row items-center gap-8">
+                        <div class="shrink-0 text-center">
+                            <i class="fa-solid fa-mobile-screen-button text-6xl text-indigo-500 mb-2"></i>
+                            <div class="text-xl font-black text-indigo-900 mt-2">Visit Japan Web</div>
+                        </div>
+                        <div class="flex-1 w-full">
+                            <h2 class="text-2xl font-bold text-slate-800 mb-3">빠른 일본 입국을 위한 <span class="text-indigo-600">비짓재팬웹</span></h2>
+                            <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                                간사이 공항 도착 후 원활한 입국 심사와 세관 신고를 위해 <strong>비짓재팬웹(Visit Japan Web)</strong> 사전 등록을 강력히 권장합니다. 
+                                스마트폰에서 미리 정보를 입력하고 <strong>완료된 QR 코드를 미리 캡처</strong>해 두시면 수속 시간이 크게 단축됩니다.
+                            </p>
+                            
+                            <!-- 🚨 업데이트된 아날로그(종이) 신고서 안내 문구 -->
+                            <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-5 flex items-start gap-3 shadow-sm">
+                                <i class="fa-solid fa-file-pen mt-1 text-amber-600 text-lg shrink-0"></i>
+                                <div>
+                                    <strong class="text-amber-900 block mb-1 text-sm">스마트폰 작성이 어려우신가요? 걱정하지 마세요!</strong>
+                                    <span class="text-amber-800 text-sm leading-relaxed block">
+                                        스마트폰 등록이 번거로우신 대원님들은 출발 당일 <strong>공항 미팅 시 스루가이드가 종이 신고서 서류를 넉넉히 준비해 옵니다.</strong> 안내에 따라 서면으로 각자 작성하셔도 전혀 무방하니 안심하고 오셔도 됩니다.
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col sm:flex-row gap-3">
+                                <a href="https://vjw-lp.digital.go.jp/ko/" target="_blank" class="w-full sm:w-fit px-8 bg-indigo-600 hover:bg-indigo-700 text-white text-center py-3.5 rounded-xl font-bold shadow-md transition-colors flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> VJW 공식 홈페이지 등록
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -552,6 +615,7 @@
                         <td class="day-col">제 1 일<br><span style="font-size:9pt; font-weight:normal; color:#64748b;">3/27 (금)</span></td>
                         <td>
                             <p style="color: #dc2626; font-weight: bold; margin-bottom: 12px; font-size: 10.5pt; border-bottom: 1px solid #e2e8f0; padding-bottom: 5px;">
+                                <span class="print-time">02:30</span> 태백시청 앞 광장 집결 및 출발 (김원준 기사님 010-2740-8785)<br>
                                 <span class="print-time">06:30</span> 인천공항 제1터미널 3층 L카운터 앞 집결<br>
                                 <span class="print-time">09:10</span> 인천 출발 (제주항공 7C 1303) ✈️ <span class="print-time" style="width: auto;">11:00</span> 간사이 도착
                             </p>
@@ -808,8 +872,8 @@
         <!-- Bottom Nav (Mobile) -->
         <div class="md:hidden fixed bottom-0 w-full bg-white border-t border-slate-200 flex justify-around py-3 z-50 text-[10px] text-slate-500 font-medium shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)] print-hide">
             <a href="#home" class="flex flex-col items-center gap-1"><i class="fa-solid fa-house text-lg"></i>홈</a>
+            <a href="#vjw" class="flex flex-col items-center gap-1 text-indigo-600"><i class="fa-solid fa-qrcode text-lg"></i>입국준비</a>
             <a href="#baggage" class="flex flex-col items-center gap-1 text-red-600"><i class="fa-solid fa-suitcase-rolling text-lg"></i>수하물</a>
-            <a href="#economy" class="flex flex-col items-center gap-1 text-blue-600"><i class="fa-solid fa-yen-sign text-lg"></i>환율</a>
             <a href="#schedule" class="flex flex-col items-center gap-1"><i class="fa-regular fa-calendar-days text-lg"></i>일정</a>
         </div>
     </main>
@@ -1019,7 +1083,12 @@
             map = L.map('map', { scrollWheelZoom: false, zoomControl: true }).setView([34.75, 135.3], 9);
             L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', { attribution: '&copy; OpenStreetMap', subdomains: 'abcd', maxZoom: 19 }).addTo(map);
             markersLayer = L.layerGroup().addTo(map); linesLayer = L.layerGroup().addTo(map);
-            drawMap('all');
+            
+            // 지도 컨테이너 렌더링 완료 후 크기 계산 및 초기 그리기 실행 (NaN 에러 방지)
+            setTimeout(() => {
+                map.invalidateSize();
+                drawMap('all');
+            }, 300);
         }
         function createCustomIcon(emoji, dayClass, index) {
             const delay = index * 0.15; 
@@ -1090,7 +1159,12 @@
             };
 
             if(allLatLngs.length > 0){ 
-                map.flyToBounds(allLatLngs, { padding: [40, 40], duration: 1.2 }); 
+                const bounds = L.latLngBounds(allLatLngs);
+                if (map.getSize().x > 0 && map.getSize().y > 0) {
+                    map.flyToBounds(bounds, { padding: [40, 40], duration: 1.2 }); 
+                } else {
+                    map.fitBounds(bounds, { padding: [40, 40] });
+                }
                 setTimeout(renderLines, 1200); 
             } else {
                 renderLines();
